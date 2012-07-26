@@ -9,7 +9,7 @@ public enum OperatingSystem {
     WINDOWS     ("cmd /c start ","cmd /c start cd ",null),
     MAC_OS      ("open -a /Applications/Utilities/Terminal.app ","open -a /Applications/Utilities/Terminal.app ","open -R "),
     LINUX_GNOME ("gnome-terminal ","gnome-terminal --working-directory=","nautilus "),
-    LINUX_KDE   ("konsole ","konsole --workdir ","konqueror "),
+    LINUX_KDE   ("konsole ","konsole --workdir ","dolphin "),
     LINUX_XFCE  ("exo-open --launch TerminalEmulator ","exo-open --launch TerminalEmulator --working-directory ","thunar "),
     LINUX_LXDE  ("lxterminal ","lxterminal --working-directory=","pcmanfm "),
     LINUX_UNKNOWN(null,null,null),
