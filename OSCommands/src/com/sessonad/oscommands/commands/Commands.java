@@ -37,7 +37,12 @@ public abstract class Commands {
     public abstract OperatingSystem getOperatingSystem();
     
     public void openInShell(String currentPath) throws Exception {
-        String fullCommand = getOperatingSystem().getShellCommand() + currentPath;
+        String fullCommand = "";
+        if(getOperatingSystem().equals(OperatingSystem.WINDOWS)){
+            fullCommand = getOperatingSystem().getShellCommand()+"\""+currentPath+"\"";
+        }else{
+            fullCommand = getOperatingSystem().getShellCommand() + currentPath;
+        }
         Runtime.getRuntime().exec(fullCommand);
     }
     
