@@ -26,6 +26,6 @@ public class LinuxUnknownCommands extends Commands {
 
     @Override
     public OperatingSystem getOperatingSystem() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return OperatingSystem.LINUX_UNKNOWN;
     }
 }

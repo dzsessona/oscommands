@@ -23,7 +23,7 @@ public class OSDetector {
         try {
             if (checkProcessNames("gnome-session")) {
                 return OperatingSystem.LINUX_GNOME;
-            }else if (checkProcessNames("ksmserver")) {
+            }else if (checkProcessNames("ksmserver", "kdeinit4")) {
                 return OperatingSystem.LINUX_KDE;
             }else if (checkProcessNames("xfce4-session", "xfce-mcs-manage")) {
                 return OperatingSystem.LINUX_XFCE;
